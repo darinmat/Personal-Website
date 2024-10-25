@@ -1,13 +1,42 @@
 body {
-    font-family: 'Arial', sans-serif;
-    color: #4CAF50;
+    font-family: 'Calibri', sans-serif;
+    color: navy;
     
 }
 
+/* space between links in top menu*/
+nav a {
+    margin-right: 50px; 
+}
+
 h1 {
-    margin: 20px;
-    padding: 10px;
-    color: #ff5722;
+    color: navy;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+ul {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+img{
+    margin: auto;
+    display: block;
+
+}
+
+header{
+    margin-left: 60px;
 }
 
 button {
@@ -15,5 +44,6 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
 }
+
