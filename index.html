@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Darin Materman</h1>
-        <nav>
-            <a href="about.html">About Me</a>
-            <a href="Darin_Materman_RES.pdf">Resume</a>
-        </nav>
-    </header>
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
 
     <section>
         <h2>Introduction</h2>
@@ -32,7 +33,24 @@
             explore trends in basketball and business strategy. I’m always open to new opportunities 
             and collaborations, so feel free to connect!</p>
             
-        <img src="IMG_0253.JPG" alt="My Photo" width="450" height="300" />
+            <style>
+                img {
+                    border-radius: 15px; /* Rounded corners */
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Shadow offset and blur */
+                    transition: transform 0.3s ease-in-out;
+                    filter: grayscale(100%);
+
+
+                }
+                .circle {
+                    border-radius: 50%; /* Makes the image circular */
+                }
+                img:hover {
+                    transform: scale(1.2); /* Zooms in the image */
+                    filter: grayscale(0%);
+                }
+            </style>
+            <img class="circle" src="Headshot.jpeg" alt="Circular Photo" width="250" height="200" />
     </section>
 
     <footer>
