@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darin Materman Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <section>
+        <h2 id="projects">My Projects</h2>
+        <ul>
+            <li><b><a href="#Consumer">Consumer Spending Analysis:</a></b> Consumer Insights Project for DS4200</li>
+            <li><b><a href="#NBA">NBA Future Analytics Capstone:</a></b> Future Analystics Stars Capstone</li>
+            <li><b><a href="#NHL">NHL ELO Modeling</a></b> NHL ELO Modeling</li>
+        </ul>
+    </section>
+
+    <section id="Consumer">
+        <h2><a href="https://mehallhm.github.io/ds4200-project/">Consumer Spending Insights</a></h2>
+        <p>This project explores the influence of location, promotions, demographics, and loyalty on consumer buying behavior. 
+            By analyzing a dataset containing detailed information on consumer preferences, purchase history, and product choices, 
+            we aim to understand how these factors impact the frequency of purchases and basket size. The insights derived from 
+            this analysis provide businesses with practical strategies to tailor their marketing efforts, optimize sales 
+            processes, and enhance customer satisfaction and loyalty. Through visualizations and detailed findings, this project 
+            aims to guide companies in making informed decisions to drive sales and foster long-term engagement with their target 
+            audience.</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="IMG_0170.JPG" alt="Consumer" width="450" height="300" style="margin-right: 10px;">
+            <img src="Geller.jpg" alt="Consumer" width="450" height="300">
+        
+    </section>
+    
+    <section id="NBA">
+        <h2>Technology in Sports</h2>
+        <p>The project analyzing ticket scores in the Chase Arena for the Warriors with the NBA 
+            focused on optimizing ticket pricing strategies to maximize revenue and attendance. 
+            Using machine learning techniques, we developed a model to predict ticket scores, which 
+            are metrics that assess the quality and value of seating options based on factors like 
+            location, view, demand, and pricing elasticity. By analyzing historical ticket 
+            sales data, we identified key variables influencing ticket scores, such as opponent 
+            strength, day of the week, game type (regular season, playoffs), and ticket sales trends. 
+            The model incorporated these variables to forecast ticket scores and recommend dynamic 
+            pricing adjustments that could increase revenue while ensuring optimal fan experience. 
+            This project provided valuable insights for the NBA in understanding ticket market 
+            dynamics, enabling better decision-making for pricing strategies and helping the 
+            Warriors optimize ticket sales and fan engagement at home games. Through this analysis, 
+            we demonstrated how data science could be leveraged to enhance customer satisfaction 
+            and profitability in the sports entertainment sector.
+        </p>
+        <img src="NBA Future Analytics Stars Executive Summary-1.png" alt="Technology in Sports" style="transform: rotate(90deg); width: 450px; height: 600px; display: block; margin: 0 auto;">
+    </section>
+    
+    <section id="NHL">
+        <h2><a href="A Better Bettor.pdf">A Bettter Bettor - ELO Modeling NHL Teams</a></h2>
+        <p>The NHL project focuses on the intersection of machine learning and sports betting, addressing how bettors can use 
+            artificial intelligence to make better, more rational decisions. The abstract outlines the significance of sports 
+            betting in the modern entertainment landscape and the challenges it poses due to irrational decision-making and 
+            addiction. It suggests that machine learning can enhance sports betting outcomes by analyzing large datasets to 
+            identify patterns and trends, offering more accurate and data-driven predictions compared to human intuition. 
+            The introduction provides context on the rapid growth of the sports betting industry in the U.S., driven by the 
+            legalization of betting in various states. It emphasizes the need for tools like machine learning to counterbalance 
+            the odds, which are generally tilted in favor of bookmakers. The methodology section details a two-step approach 
+            to predictive modeling: first, predicting game outcomes using the ELO Rating System to assess team strengths, and 
+            second, evaluating bookmakers’ odds to find profitable betting opportunities. The application of the Elo Rating 
+            System is explained in depth, noting its self-correcting nature and the Markov property, which allows predictions 
+            based on previous ratings. The model uses the difference in ELO ratings between teams to estimate expected goals, 
+            leveraging a Poisson distribution to predict actual goals scored. The conclusion focuses on comparing predictive 
+            models with bookmaker odds to identify value bets—those where the bettor’s implied probability is higher than the 
+            bookmaker’s estimate. This project illustrates how machine learning can empower bettors by reducing reliance on 
+            emotion and intuition, providing a more scientific approach to betting in hockey and, by extension, other sports. 
+            The project also highlights the complexities of translating odds into profitable bets, considering factors like 
+            vigorish and the bookmaker’s margin. Through this analysis, the project aims to contribute to a deeper 
+            understanding of how technology can shape the sports betting landscape, offering insights into potential future 
+            research directions and practical applications for bettors.</p>
+        <img src="IMG_9066.jpg" alt="Staying Active" width="450" height="300">
+    
+    
+
+    <footer>
+        <p>Contact: <a href="mailto:darinmaterman@gmail.com">darinmaterman@gmail.com</a></p>
+        <p>Connect on LinkedIn <a href="https://www.linkedin.com/in/darin-materman/">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
