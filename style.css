@@ -64,5 +64,19 @@ img{
 
 
 section {
-    padding-top: 20px; /* Adjust this to match the height of your banner */
+    padding-top: 30px; /* Adjust this to match the height of your banner */
+}
+
+img {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Shadow offset and blur */
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%);
+}
+.circle {
+    border-radius: 50%; /* Makes the image circular */
+}
+img:hover {
+    transform: scale(1.2); /* Zooms in the image */
+    filter: grayscale(0%);
 }
